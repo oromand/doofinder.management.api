@@ -10,15 +10,15 @@
 	<PackageReleaseNotes>Initial revision</PackageReleaseNotes>
 	<Copyright>Copyright (C) 2020 oromand</Copyright>
 	<RepositoryType>Dependency</RepositoryType>
-	<PackageProjectUrl>http://bukimedia.github.io/PrestaSharp/</PackageProjectUrl>
+	<PackageProjectUrl>https://github.com/oromand/doofinder.management.api</PackageProjectUrl>
 	<PackageIconUrl>https://api.nuget.org/v3-flatcontainer/prestasharp/1.1.0/icon</PackageIconUrl>
-	<projectUrl>https://github.com/Bukimedia/PrestaSharp/</projectUrl>
+	<projectUrl>https://github.com/oromand/doofinder.management.api</projectUrl>
 	<Description>DooFinder API nuget</Description>
 	<PackageLicenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</PackageLicenseUrl>
 	<PackageId>doofinder.management.api</PackageId>
 	<Title>doofinder.management.api</Title>
 	<PackageVersion>1.1.2</PackageVersion>
-	<RepositoryUrl>https://github.com/Bukimedia/PrestaSharp</RepositoryUrl>
+	<RepositoryUrl>https://github.com/oromand/doofinder.management.api</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
