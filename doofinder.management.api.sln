@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "doofinder.management.api", "doofinder.management.api\doofinder.management.api.csproj", "{54E7BB2A-47B3-44ED-A4BC-BFB7E9AFFE27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "doofinder.management.apiTests", "doofinder.management.apiTests\doofinder.management.apiTests.csproj", "{B4C166E8-7B85-40A8-8565-E577959E0A4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54E7BB2A-47B3-44ED-A4BC-BFB7E9AFFE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E7BB2A-47B3-44ED-A4BC-BFB7E9AFFE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E7BB2A-47B3-44ED-A4BC-BFB7E9AFFE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E7BB2A-47B3-44ED-A4BC-BFB7E9AFFE27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C166E8-7B85-40A8-8565-E577959E0A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C166E8-7B85-40A8-8565-E577959E0A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C166E8-7B85-40A8-8565-E577959E0A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C166E8-7B85-40A8-8565-E577959E0A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {815AE843-61B2-4FB9-B89D-073A62CB039F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0; net452</TargetFrameworks>
+	<Company>oromand</Company>
+	<Authors>oromand</Authors>
+	<Product>doofinder.management.api</Product>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageTags>doofinder management api</PackageTags>
+	<PackageReleaseNotes>Initial revision</PackageReleaseNotes>
+	<Copyright>Copyright (C) 2020 oromand</Copyright>
+	<RepositoryType>Dependency</RepositoryType>
+	<PackageProjectUrl>http://bukimedia.github.io/PrestaSharp/</PackageProjectUrl>
+	<PackageIconUrl>https://api.nuget.org/v3-flatcontainer/prestasharp/1.1.0/icon</PackageIconUrl>
+	<projectUrl>https://github.com/Bukimedia/PrestaSharp/</projectUrl>
+	<Description>DooFinder API nuget</Description>
+	<PackageLicenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</PackageLicenseUrl>
+	<PackageId>doofinder.management.api</PackageId>
+	<Title>doofinder.management.api</Title>
+	<PackageVersion>1.1.2</PackageVersion>
+	<RepositoryUrl>https://github.com/Bukimedia/PrestaSharp</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+  </ItemGroup>
+
+</Project>
