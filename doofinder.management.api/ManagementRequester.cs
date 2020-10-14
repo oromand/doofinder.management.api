@@ -29,7 +29,7 @@ namespace doofinder.management.api
             ManagementApiResponse<ProcessDataFeedResponse> result = new ManagementApiResponse<ProcessDataFeedResponse>();
 
             string requestUri = $"{hashId}/tasks/process?force={force.ToString().ToLowerInvariant()}";
-            RestRequest request = new RestRequest(requestUri, Method.GET);
+            RestRequest request = new RestRequest(requestUri, Method.POST);
 
             var response = await _client.ExecuteAsync(request);
             result.HttpResponse = response;
