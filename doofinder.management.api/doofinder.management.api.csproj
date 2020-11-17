@@ -7,7 +7,7 @@
 	<Product>doofinder.management.api</Product>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageTags>doofinder management api</PackageTags>
-	<PackageReleaseNotes>Fixed ProcessDataFeed</PackageReleaseNotes>
+	<PackageReleaseNotes>Downgraded version of restsharp</PackageReleaseNotes>
 	<Copyright>Copyright (C) 2020 oromand</Copyright>
 	<RepositoryType>Dependency</RepositoryType>
 	<PackageProjectUrl>https://github.com/oromand/doofinder.management.api</PackageProjectUrl>
@@ -17,13 +17,13 @@
 	<PackageLicenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</PackageLicenseUrl>
 	<PackageId>doofinder.management.api</PackageId>
 	<Title>doofinder.management.api</Title>
-	<PackageVersion>1.1.3</PackageVersion>
+	<PackageVersion>1.1.4</PackageVersion>
 	<RepositoryUrl>https://github.com/oromand/doofinder.management.api</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-    <PackageReference Include="RestSharp" Version="106.11.7" />
+    <PackageReference Include="RestSharp" Version="105.0.0" />
   </ItemGroup>
 
 </Project>

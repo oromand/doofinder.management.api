@@ -24,22 +24,24 @@ namespace doofinder.management.api
         /// </summary>
         /// <param name="hashId"></param>
         /// <returns></returns>
-        async public System.Threading.Tasks.Task<Models.ManagementApiResponse<Models.ProcessingTasks.ProcessDataFeedResponse>> ProcessDataFeed(string hashId, bool force = false)
+        public System.Threading.Tasks.Task<Models.ManagementApiResponse<Models.ProcessingTasks.ProcessDataFeedResponse>> ProcessDataFeed(string hashId, bool force = false)
         {
             ManagementApiResponse<ProcessDataFeedResponse> result = new ManagementApiResponse<ProcessDataFeedResponse>();
 
             string requestUri = $"{hashId}/tasks/process?force={force.ToString().ToLowerInvariant()}";
             RestRequest request = new RestRequest(requestUri, Method.POST);
 
-            var response = await _client.ExecuteAsync(request);
+            var response = _client.Execute(request);
             result.HttpResponse = response;
 
-            if (response.IsSuccessful)
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 result.Data = Newtonsoft.Json.JsonConvert.DeserializeObject<ProcessDataFeedResponse>(response.Content);
             }
 
-            return result;
+
+            return System.Threading.Tasks.Task.FromResult(result);
+
         }
 
         /// <summary>
@@ -48,22 +50,22 @@ namespace doofinder.management.api
         /// <param name="hashId"></param>
         /// <param name="taskId"></param>
         /// <returns></returns>
-        async public System.Threading.Tasks.Task<Models.ManagementApiResponse<Models.ProcessingTasks.ProcessDataFeedResponse>> GetTaskDetails(string hashId, string taskId)
+        public System.Threading.Tasks.Task<Models.ManagementApiResponse<Models.ProcessingTasks.ProcessDataFeedResponse>> GetTaskDetails(string hashId, string taskId)
         {
             ManagementApiResponse<ProcessDataFeedResponse> result = new ManagementApiResponse<ProcessDataFeedResponse>();
 
             string requestUri = $"{hashId}/tasks/{taskId}";
             RestRequest request = new RestRequest(requestUri, Method.GET);
 
-            var response = await _client.ExecuteAsync(request);
+            var response = _client.Execute(request);
             result.HttpResponse = response;
 
-            if (response.IsSuccessful)
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 result.Data = Newtonsoft.Json.JsonConvert.DeserializeObject<ProcessDataFeedResponse>(response.Content);
             }
 
-            return result;
+            return System.Threading.Tasks.Task.FromResult(result);
         }
     }
 }
