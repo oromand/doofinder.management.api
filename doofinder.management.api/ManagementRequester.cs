@@ -10,7 +10,7 @@ namespace doofinder.management.api
         private readonly string baseUrl;
         private readonly RestClient _client;
 
-        public ManagementRequester(string apiKey, string baseUrl = "https://eu1-api.doofinder.com/v1")
+        public ManagementRequester(string apiKey, string baseUrl = "https://eu1-api.doofinder.com")
         {
             this.apiKey = apiKey;
             this.baseUrl = baseUrl;
@@ -24,11 +24,11 @@ namespace doofinder.management.api
         /// </summary>
         /// <param name="hashId"></param>
         /// <returns></returns>
-        public System.Threading.Tasks.Task<Models.ManagementApiResponse<Models.ProcessingTasks.ProcessDataFeedResponse>> ProcessDataFeed(string hashId, bool force = false)
+        public System.Threading.Tasks.Task<Models.ManagementApiResponse<Models.ProcessingTasks.ProcessDataFeedResponse>> ProcessDataFeed(string hashId)
         {
             ManagementApiResponse<ProcessDataFeedResponse> result = new ManagementApiResponse<ProcessDataFeedResponse>();
 
-            string requestUri = $"{hashId}/tasks/process?force={force.ToString().ToLowerInvariant()}";
+            string requestUri = $"api/v2/search_engines/{hashId}/_process";
             RestRequest request = new RestRequest(requestUri, Method.POST);
 
             var response = _client.Execute(request);
@@ -50,11 +50,11 @@ namespace doofinder.management.api
         /// <param name="hashId"></param>
         /// <param name="taskId"></param>
         /// <returns></returns>
-        public System.Threading.Tasks.Task<Models.ManagementApiResponse<Models.ProcessingTasks.ProcessDataFeedResponse>> GetTaskDetails(string hashId, string taskId)
+        public System.Threading.Tasks.Task<Models.ManagementApiResponse<Models.ProcessingTasks.ProcessDataFeedResponse>> GetTaskDetails(string hashId)
         {
             ManagementApiResponse<ProcessDataFeedResponse> result = new ManagementApiResponse<ProcessDataFeedResponse>();
 
-            string requestUri = $"{hashId}/tasks/{taskId}";
+            string requestUri = $"api/v2/search_engines/{hashId}/_process";
             RestRequest request = new RestRequest(requestUri, Method.GET);
 
             var response = _client.Execute(request);

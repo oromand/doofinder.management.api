@@ -7,7 +7,7 @@
 	<Product>doofinder.management.api</Product>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<PackageTags>doofinder management api</PackageTags>
-	<PackageReleaseNotes>Downgraded version of restsharp</PackageReleaseNotes>
+	<PackageReleaseNotes>Adjusted to version 2</PackageReleaseNotes>
 	<Copyright>Copyright (C) 2020 oromand</Copyright>
 	<RepositoryType>Dependency</RepositoryType>
 	<PackageProjectUrl>https://github.com/oromand/doofinder.management.api</PackageProjectUrl>
@@ -17,7 +17,7 @@
 	<PackageLicenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</PackageLicenseUrl>
 	<PackageId>doofinder.management.api</PackageId>
 	<Title>doofinder.management.api</Title>
-	<PackageVersion>1.1.4</PackageVersion>
+	<PackageVersion>2.0.0</PackageVersion>
 	<RepositoryUrl>https://github.com/oromand/doofinder.management.api</RepositoryUrl>
   </PropertyGroup>
 
